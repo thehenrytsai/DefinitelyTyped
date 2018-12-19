@@ -635,7 +635,7 @@ declare namespace NodeJS {
 
     interface ReadableStream extends EventEmitter {
         readable: boolean;
-        read(size?: number): string | Buffer;
+        read(size?: number): string | Buffer | null;
         setEncoding(encoding: string): this;
         pause(): this;
         resume(): this;
